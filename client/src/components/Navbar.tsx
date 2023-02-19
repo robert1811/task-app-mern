@@ -13,15 +13,15 @@ const Navigation = () => {
 
     return(
         <div>
-            <nav className='navbar bg-dark'>
+            <nav className='navbar'>
                 {!isAuth ? 
                 <ul className='nav'>
-                    <li className='nav-item'><Link to="/login" className='nav-link'>Login</Link></li>
-                    <li className='nav-item'><Link to="/register" className='nav-link'>Register</Link></li>
+                    <li className='nav-item'><Link to="/login" className='nav-link text-white'>Login</Link></li>
+                    <li className='nav-item'><Link to="/register" className='nav-link text-white'>Register</Link></li>
                 </ul> :
                 <ul className='nav'>
-                    <li className='nav-item'><Link to="/" className='nav-link'>Home</Link></li> 
-                    <li className="nav-item"><a href='' className='nav-link' onClick={logOut}>Log out</a></li>
+                    <li className='nav-item'><Link to="/" className='nav-link text-white'>Home</Link></li> 
+                    <li className="nav-item"><a href='' className='nav-link text-white' onClick={logOut}>Log out</a></li>
                 </ul>
                 }
             </nav>
