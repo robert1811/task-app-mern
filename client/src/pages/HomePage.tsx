@@ -114,6 +114,7 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="col-8">
+                    {tasks.length != 0 ? 
                     <table className='table table-success'>
                         <thead>
                             <tr>
@@ -136,6 +137,8 @@ const HomePage = () => {
                             })}
                         </tbody>
                     </table>
+                    : ''
+                    }
                 </div>
             </div>
         </div>
